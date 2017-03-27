@@ -1,4 +1,8 @@
-# What is this?  
+# Jirawebhook
+
+[![Build Status](https://travis-ci.org/lv-dev/jirawebhook.svg?branch=master)](https://travis-ci.org/lv-dev/jirawebhook)
+
+## What is this?  
 
 This is PHP library for processing and handling Atlassian JIRA webhook data.
 
@@ -6,7 +10,7 @@ It contains classes that can parse data from [JIRA webhooks](https://developer.a
 
 The package is meant to be used with the [Vicky slackbot](https://github.com/kommuna/vicky), but it can also be used independently.
 
-# Installation
+## Installation
   
 With composer, create a new composer.json file and add the following code:
 ```
@@ -20,9 +24,9 @@ With composer, create a new composer.json file and add the following code:
 
 Then run command `composer install`.
 
-# Usage  
+## Usage  
 
-## JIRA data events    
+### JIRA data events    
 
 To create a new event use following example code:
 
@@ -69,7 +73,7 @@ try {
 The `$eventName` must be some data from the [JiraWebhook\Models\JiraWebhookData]
 (https://github.com/kommuna/jirawebhook/blob/master/src/Models/JiraWebhookData.php)
 
-## JIRA data converters  
+### JIRA data converters  
 
 To create a new converter create a new class that implements the JiraWebhookDataConverter interface. Then to set and use
 a new converter use the following example code:
@@ -128,6 +132,6 @@ $message = JiraWebhook::convert('converterName', $jiraWebhookData)
 
 Please refer to [Slack's documentation for message formatting](https://api.slack.com/docs/message-attachments) for more details on the `$attachment` variable above.
 
-# Testing  
+## Testing  
 
 Run ```vendor/bin/phpunit``` or just ```phpunit``` if you have it installed globally.
