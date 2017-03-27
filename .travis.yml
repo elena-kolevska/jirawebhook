@@ -12,6 +12,7 @@ before_script:
 
 script:
   - composer install -n --prefer-source
+  - composer dump-autoload -o
   - vendor/bin/phpunit
 
 
