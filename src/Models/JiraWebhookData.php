@@ -159,13 +159,13 @@ class JiraWebhookData
      */
     public function setIssueEventDescription($issueEvent)
     {
-        $event_descriptions = [
+        $eventDescriptions = [
             'issue_created' => "A new issue was created",
             'issue_commented' => "A new comment was added",
             'issue_updated' => "The issue was updated",
             'issue_assigned' => "The issue was assigned",
         ];
-        $this->issueEventDescription = isset($event_descriptions[$issueEvent])?$event_descriptions[$issueEvent]:'';
+        $this->issueEventDescription = isset($eventDescriptions[$issueEvent])?$eventDescriptions[$issueEvent]:'';
     }
 
     /**

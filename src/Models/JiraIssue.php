@@ -277,7 +277,7 @@ class JiraIssue
     public function setColour($priority)
     {
         // These are the same colors used for priority indicators in Jira
-        $priority_colors = [
+        $priorityColors = [
             'Blocker' => '#d40100',
             'Highest' => '#ce0000',
             'High' => '#ea4444',
@@ -285,7 +285,7 @@ class JiraIssue
             'Low' => '#2a8735',
             'Lowest' => '#55a557'
         ];
-        $this->colour = isset($priority_colors[$priority]) ? $priority_colors[$priority]: '#007AB8';
+        $this->colour = isset($priorityColors[$priority]) ? $priorityColors[$priority]: '#007AB8';
     }
 
     /**

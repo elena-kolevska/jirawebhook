@@ -1,6 +1,8 @@
 # Jirawebhook
 
 [![Build Status](https://travis-ci.org/lv-dev/jirawebhook.svg?branch=master)](https://travis-ci.org/lv-dev/jirawebhook)
+[![Software License](https://img.shields.io/badge/license-Unlicense-green.svg)](LICENSE)
+[![GitHub issues](https://img.shields.io/github/issues/lv-dev/jirawebhook.svg)](https://github.com/lv-dev/jirawebhook/issues)
 
 ## What is this?  
 

@@ -5,4 +5,13 @@
             <directory>./tests</directory>
         </testsuite>
     </testsuites>
+    <filter>
+        <whitelist>
+            <directory suffix=".php">src/</directory>
+        </whitelist>
+    </filter>
+    <logging>
+        <!-- This is where the coverage report will be written -->
+        <log type="coverage-clover" target="./clover.xml"/>
+    </logging>
 </phpunit>
